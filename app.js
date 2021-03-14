@@ -1,3 +1,3 @@
-import Ler from './components.js'
+import Ler from './assets/js/components.js'
 
 console.log(Ler)

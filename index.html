@@ -5,10 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Essentials Toolkit | Gesiel</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 <body>
     <h2> Exclusivo </h2>
+    <button onClick="criarItem()"> Criar Item </button>
+    <div id="app">
+        
+    </div>
     <script type="module" src="./app.js"></script>
+
+    <script>
+
+        for(x=0; x<10;x++) {
+            var div = document.createElement('div')
+            var att = document.createAttribute("class")
+            att.value = "aplicativo"
+            div.setAttributeNode(att)
+            document.getElementById("app").appendChild(div)
+
+            var divItem = document.createElement('div')
+
+            var attItem = document.createAttribute("class")
+            attItem.value = "item"
+            divItem.setAttributeNode(attItem)
+            document.getElementsByClassName("aplicativo")[x].appendChild(divItem)
+
+            var titulo = document.createElement('p')
+
+            var attTitulo = document.createAttribute("class")
+            attTitulo.value = "titulo"
+            titulo.setAttributeNode(attTitulo)
+            document.getElementsByClassName("aplicativo")[x].appendChild(titulo)
+
+            // Criar SMAL
+            var small = document.createElement("small")
+            small.innerHTML =  x
+            document.getElementsByClassName("titulo")[x].appendChild(small)
+
+            }
+
+        // function criarItem(){
+        //     // Criar elemento Aplicativo
+        //     var div = document.createElement('div')
+        //     var att = document.createAttribute("id")
+        //     att.value = "aplicativo"
+        //     div.setAttributeNode(att)
+        //     document.getElementById("app").appendChild(div)
+
+        //     // Obter o Aplicativo
+        //     var limite = document.getElementById('aplicativo')
+
+            
+        //     // Criar o Item
+        //     var divItem = document.createElement('div')
+        //     var attItem = document.createAttribute("id")
+        //     attItem.value = "item"
+        //     divItem.setAttributeNode(attItem)
+        //     document.getElementById("aplicativo").appendChild(divItem)
+
+        //     // Criar o Titulo
+        //     var titulo = document.createElement('p')
+        //     var attTitulo = document.createAttribute("id")
+        //     attTitulo.value = "titulo"
+        //     titulo.setAttributeNode(attTitulo)
+        //     document.getElementById("aplicativo").appendChild(titulo)
+
+        //     // Criar SMAL
+        //     var small = document.createElement("small")
+        //     small.innerHTML = "Calculadora"
+        //     document.getElementById("titulo").appendChild(small)
+        // }
+        
+
+
+
+    </script>
 </body>
 </html>

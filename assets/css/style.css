@@ -1,0 +1,41 @@
+body{
+    background:#666;
+    color:white;
+    text-align:center
+}
+
+#app{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.aplicativo{
+    width:80px;
+    height: 80px;
+    margin:2px;
+    background: ;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 1s all;
+}
+.aplicativo:hover .item{
+    background: blue;
+}
+
+.item{
+    display:flex;
+    width:50px;
+    height: 50px;
+    background: yellow;
+    margin: 0 auto;
+    border-radius:10px;
+    box-shadow: 2px 2px 1px 1px #222;
+}
+
+.titulo{
+    color:yellow;
+    line-height: 2px;
+    font-weight: bold;
+    text-align:center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
